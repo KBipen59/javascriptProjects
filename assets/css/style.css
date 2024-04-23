@@ -1,0 +1,237 @@
+html {
+  scroll-behavior: smooth;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  text-decoration: none;
+  list-style-type: none;
+  color: #323131;
+  text-transform: capitalize;
+}
+* span {
+  color: #03a9f4;
+}
+* .fixed-nav {
+  position: fixed !important;
+  top: 0;
+  left: 0;
+  background-color: #40c7f1;
+}
+* #nav {
+  padding: 10px 100px;
+  width: 100%;
+  position: absolute;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-transition: all ease 0.4s;
+  transition: all ease 0.4s;
+}
+* #nav .nav-center {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  gap: 100px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 100%;
+}
+* #nav .nav-center .nav-header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  width: 100%;
+}
+* #nav .nav-center .nav-header .logo svg {
+  width: 150px;
+  height: 60px;
+}
+* #nav .nav-center .nav-header .nav-toggle {
+  display: none;
+  background-color: transparent;
+  border: none;
+  padding: 5px;
+  font-size: 20px;
+}
+* #nav .nav-center .links-container .links {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 40px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+* #nav .nav-center .links-container .links li:hover a {
+  color: white;
+}
+* #nav .nav-center .links-container .links a {
+  font-size: 20px;
+  font-weight: 700;
+}
+* .banner {
+  background-image: url("https://media.istockphoto.com/id/1933790728/photo/young-female-tourist-enjoying-the-beautiful-landscape-at-padar-island-in-komodo-national-park.jpg?s=2048x2048&w=is&k=20&c=BYZ_IStEP4m0uZbbypyf25Win-QL1ZhazwHnaOor9eo=");
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 100vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+* .banner .container {
+  padding: 200px 50px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 30px;
+}
+* .banner .container h1, * .banner .container a, * .banner .container p {
+  color: white;
+}
+* .banner .container a {
+  background-color: transparent;
+  padding: 5px 10px;
+  border-radius: 4px;
+  border: 2px solid white;
+}
+* .banner .container a:hover {
+  background-color: #fff;
+  color: black;
+}
+* .banner .container p {
+  text-align: center;
+  padding: 0 100px;
+}
+* .section {
+  padding: 50px 100px 500px 100px;
+}
+* #services {
+  background-color: rgba(196, 192, 192, 0.8392156863);
+}
+* footer {
+  background-color: #00258F;
+  padding: 100px !important;
+  text-align: center;
+}
+* footer p, * footer span {
+  color: white;
+}
+* .top-link {
+  font-size: 1.25rem;
+  position: fixed;
+  bottom: 3rem;
+  right: 3rem;
+  width: 2rem;
+  height: 2rem;
+  display: grid;
+  place-items: center;
+  border-radius: 2px;
+  color: white;
+  -webkit-animation: bounce 2s ease-in-out infinite;
+          animation: bounce 2s ease-in-out infinite;
+  background-color: rgba(255, 152, 0, 0.9294117647);
+  visibility: hidden;
+  z-index: -100;
+}
+* .top-link i {
+  color: white;
+}
+* .show-link {
+  visibility: visible;
+  z-index: 100;
+}
+@media screen and (max-width: 900px) {
+  * #nav {
+    position: static;
+  }
+  * #nav, * .section {
+    padding-right: 50px;
+    padding-left: 50px;
+  }
+  * .nav-center {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    gap: 0 !important;
+    -webkit-box-align: start !important;
+        -ms-flex-align: start !important;
+            align-items: start !important;
+  }
+  * .nav-center .nav-header svg {
+    width: 100px !important;
+  }
+  * .nav-center .links-container {
+    overflow: hidden;
+    height: 0;
+    -webkit-transition: all ease 0.35s;
+    transition: all ease 0.35s;
+  }
+  * .nav-center .links-container .links {
+    display: inline-block !important;
+  }
+  * .nav-center .links-container .links li {
+    padding: 10px 20px;
+    -webkit-transition: all ease 0.3s;
+    transition: all ease 0.3s;
+  }
+  * .nav-center .links-container .links li::after {
+    content: "";
+    width: 0;
+    height: 2px;
+    background-color: black;
+    display: block;
+    -webkit-transition: all ease 0.35s;
+    transition: all ease 0.35s;
+  }
+  * .nav-center .links-container .links li:hover {
+    -webkit-transform: translateX(10px);
+            transform: translateX(10px);
+  }
+  * .nav-center .links-container .links li:hover::after {
+    width: 100%;
+  }
+  * .nav-center .links-container .links li:hover a {
+    color: #FF9800 !important;
+  }
+  * .nav-toggle {
+    display: inline-block !important;
+  }
+  * .banner {
+    height: 90vh;
+  }
+  * .banner .container {
+    gap: 20px;
+    padding: 100px 50px !important;
+  }
+  * .banner .container p {
+    padding: 0 !important;
+  }
+}/*# sourceMappingURL=style.css.map */
