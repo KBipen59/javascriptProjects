@@ -1,0 +1,93 @@
+* {
+  padding: 0;
+  margin: 0;
+  text-transform: capitalize;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  list-style-type: none;
+  font-family: cursive;
+}
+
+body {
+  background-color: #dff1f7;
+}
+
+section {
+  padding: 0 100px;
+}
+section .title {
+  text-align: center;
+  margin: 50px 200px;
+}
+section .about-center {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  gap: 40px;
+}
+section .about-center .about-img {
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+}
+section .about-center .about-img img {
+  border-radius: 4px;
+  -o-object-fit: cover;
+     object-fit: cover;
+  width: 100%;
+}
+section .about-center .about {
+  background-color: #ffffff;
+  border-radius: 4px;
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  overflow: hidden;
+}
+section .about-center .about .btn-container {
+  background-color: #cdcdcd;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+section .about-center .about .btn-container .tab-btn {
+  border: none;
+  padding: 20px 40px;
+  background-color: inherit;
+  cursor: pointer;
+  -webkit-transition: all ease 0.5s;
+  transition: all ease 0.5s;
+}
+section .about-center .about .btn-container .tab-btn.active {
+  background-color: white;
+}
+section .about-center .about .about-content {
+  padding: 20px;
+}
+section .about-center .about .about-content .content {
+  visibility: hidden;
+  height: 0;
+}
+section .about-center .about .about-content .content h4 {
+  margin-bottom: 10px;
+}
+section .about-center .about .about-content .content.active {
+  visibility: visible;
+  opacity: 1;
+  height: auto;
+}
+
+@media screen and (max-width: 1000px) {
+  .about-center {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+}/*# sourceMappingURL=style.css.map */
