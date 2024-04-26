@@ -1,0 +1,100 @@
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  text-transform: capitalize;
+}
+* body {
+  background-color: #67c1fd;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+* .section-center {
+  padding: 50px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 20px;
+  background-color: #fff;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  width: 50vw;
+  margin: 100px;
+  border: 1px solid #fff;
+  border-radius: 4px;
+  -webkit-box-shadow: 4px 6px 15px -5px #262525;
+          box-shadow: 4px 6px 15px -5px #262525;
+  margin-top: 50px;
+}
+* .section-center .grocery-form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 20px;
+  text-align: center;
+  padding: 20px;
+}
+* .section-center .grocery-form .alert {
+  -webkit-transition: all ease 0.35s;
+  transition: all ease 0.35s;
+  padding: 5px;
+}
+* .section-center .grocery-form .alert-danger {
+  background-color: #ff3838;
+  color: white;
+}
+* .section-center .grocery-form .alert-sucess {
+  background-color: green;
+  color: white;
+}
+* .section-center .grocery-form .form-control {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+* .section-center .grocery-form .form-control #grocery {
+  background-color: rgba(161, 201, 250, 0.6980392157);
+  border: none;
+  padding: 8px;
+  font-size: 16px;
+  color: white;
+}
+* .section-center .grocery-form .form-control .submit-btn {
+  background-color: #1296fb;
+  padding: 0 10px;
+  border: none;
+  font-weight: 400;
+}
+* .section-center .grocery-container .grocery-list {
+  margin-bottom: 10pz;
+}
+* .section-center .grocery-container .grocery-list .grocery-item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  gap: 10px;
+  margin-bottom: 10px;
+}/*# sourceMappingURL=style.css.map */
